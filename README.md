@@ -1,4 +1,4 @@
-# clothing-similarity
+# Clothing Similarity BoW Model
 
 1. `scrapper.py` scrapes ajax request data from clothing websites using `requests` library and stores it in a pandas dataframe and stores it as `data.csv`
 2. the textual data is cleaned and shuffled and the text descriptions are tokenized using `nltk` library

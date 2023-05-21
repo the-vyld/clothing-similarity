@@ -1570,4 +1570,4 @@ for i in range(0, 5040, 72):
 
 female_df = pd.DataFrame({"Name": name, "Brand": brand, "Price": price, "Url": url})
 df = male_df.append(female_df, ignore_index=True)
-df.to_csv('data.csv')
+df.to_csv('data.csv', index=False)

@@ -1,3 +1,6 @@
+import pandas as pd
+import requests
+
 name = []
 price = []
 url = []

@@ -22,3 +22,5 @@ This is a model which excepts a string having some description of a clothing art
 3. make sure necessary permissions are provided to the service of the cloud function to access the container and the database within
 4. in the entry-point function for google cloud, include the storage client with a path to your function's service's api key for authorization
 5. also add the api key (`key.json`) in the zip file at same level containing main and requirements
+
+GOOGLE CLOUD FUNCTIONS TRIGGER URL https://asia-south1-possible-cocoa-387320.cloudfunctions.net/clothing-similarity-function

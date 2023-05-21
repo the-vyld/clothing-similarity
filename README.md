@@ -1,5 +1,14 @@
 # Clothing Similarity BoW Model
 
+This is a model which excepts a string having some description of a clothing article by a user, for ex: `I want an adidas red t-shirt` and returns topN similar results to the article using feature extraction, vector-space embeddings and cosine-similarity. I have extracted the data using web-scraping from a website `asos.com` as they had a huge list and variety of products. The model is deployed on `google-cloud-functions` and accepts a `JSON` in this format:
+
+`{
+    "query": "...",
+    "topN": "..."
+ }`
+ 
+ here query parameter is mandatory and topN is optional (set to 10 by default).
+
 1. `scrapper.py` scrapes ajax request data from clothing websites using `requests` library and stores it in a pandas dataframe and stores it as `data.csv`
 2. the textual data is cleaned and shuffled and the text descriptions are tokenized using `nltk` library
 3. `extract_features` function extracts useful features from a sentence which is used to pre-process the input query string for better model performance

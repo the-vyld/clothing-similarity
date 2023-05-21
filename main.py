@@ -67,7 +67,7 @@ def extract_features(sentence):
 
     # Iterate over the tokens and extract relevant features
     for i in range(len(tokens)):
-        if tokens[i] == "mens" or tokens[i] == "womens" or tokens[i] == "unisex":
+        if tokens[i] == "men" or tokens[i] == "woman" or tokens[i] == "unisex":
             # Include gender-specific terms
             article_features.append(tokens[i])
         elif tokens[i] != "in":

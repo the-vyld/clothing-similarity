@@ -15,7 +15,7 @@ This is a model which excepts a string having some description of a clothing art
 4. used a `vector-spaced` bag of words model with cosine_similarity to compare similarity between the input and existing data and then output the results
 5. model compares the whole dataset and returns topN (query param, default = 10) similar results
 
-# Deployement instructions
+# Deployment instructions
 
 1. upload the `main.py` file and `requirements.txt` file in google-cloud-functions
 2. add the dataset in a cloud-storage-container which should be in the same project as the function

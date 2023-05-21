@@ -1,6 +1,6 @@
 # Clothing Similarity BoW Model
 
-This is a model which excepts a string having some description of a clothing article by a user, for ex: `I want an adidas red t-shirt` and returns topN similar results to the article using feature extraction, vector-space embeddings and cosine-similarity. I have extracted the data using web-scraping from a website `asos.com` as they had a huge list and variety of products. The model is deployed on `google-cloud-functions` and accepts a `JSON` in this format:
+This is a model which excepts a string having some description of a clothing article by a user, for ex: `I want an adidas red t-shirt` and returns topN similar results to the article using `feature extraction`, `vector-space embeddings` and `cosine_similarity`. I have extracted the data using web-scraping from a website `asos.com` as they had a huge list and variety of products. The model is deployed on `google-cloud-functions` and accepts a `JSON` in this format:
 
 `{
     "query": "...",
